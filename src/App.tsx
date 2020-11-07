@@ -1,8 +1,5 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 import "./App.css";
-
-const HelloPage = React.lazy(() => import("pages/Hello"));
 
 export const App: React.FC = () => {
   return (
@@ -12,4 +9,4 @@ export const App: React.FC = () => {
   );
 };
 
-export default hot(module)(App);
+export default App;
