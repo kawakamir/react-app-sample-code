@@ -6,7 +6,7 @@ import Hello from "pages/Hello";
 
 export const Path = {
   app: "/",
-  hello: "/a",
+  hello: "/hello",
 };
 
 const routes = (
