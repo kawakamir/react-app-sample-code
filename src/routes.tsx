@@ -1,8 +1,8 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
-import App from "App";
-import { Hello } from "pages";
+import App from "pages/App";
+import Hello from "pages/Hello";
 
 export const Path = {
   app: "/",
@@ -10,11 +10,13 @@ export const Path = {
 };
 
 const routes = (
-  <Switch>
-    <Route exact path={Path.app} component={App} />
-    <Route exact path={Path.hello} component={Hello} />
-    <Redirect to={Path.app} />
-  </Switch>
+  <BrowserRouter>
+    <Switch>
+      <Route exact path={Path.app} component={App} />
+      <Route exact path={Path.hello} component={Hello} />
+      <Redirect to={Path.app} />
+    </Switch>
+  </BrowserRouter>
 );
 
 export default routes;

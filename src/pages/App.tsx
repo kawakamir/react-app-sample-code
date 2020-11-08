@@ -1,8 +1,8 @@
 import React from "react";
-import { HelloTemp } from "components/templates";
+import { AppTemp } from "components/templates";
 
 const App: React.FC = () => {
-  return <HelloTemp />;
+  return <AppTemp />;
 };
 
 export default App;
